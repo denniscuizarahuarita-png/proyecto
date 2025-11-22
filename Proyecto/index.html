@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="/estilos/style.css">
+</head>
+<body>
+    <div id="recuadrol">
+        <div class="conte" id="conte">
+            <img src="img1.jpg" id="prin" class="img" > <br><br>
+        </div>
+        <button onclick="cambioImagen('bolivia'); ">bolivia</button>
+        <button onclick="cambioImagen('argentina');">argentina</button>
+        <button onclick="cambioImagen('barcelona');">barcelona</button>
+        <button onclick="cambioImagen('brazil');">brazil</button>
+    </div>
+
+
+<script type="text/javascript">
+function cambioImagen(digimon) {
+    var elemento = document.getElementById("prin");
+    if (digimon === "bolivia") {
+        elemento.src = "img1.jpg";
+    }
+    else if (digimon === "argentina") {
+        elemento.src = "img2.jpeg";
+    }
+    else if (digimon === "barcelona") {
+        elemento.src = "img3.jpeg";
+    }
+    else if (digimon === "brazil") {
+        elemento.src = "img4.jpeg";
+    }
+}
+</script>
+<footer>
+    
+</footer>
+</body>
+</html>
